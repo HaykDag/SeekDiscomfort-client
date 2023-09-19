@@ -1,0 +1,75 @@
+.card-cnt{
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px 10px;
+    background-color: rgb(87, 85, 85);
+    color: white;
+    border: 6px solid rgb(187,178,180);
+}
+.single-img{
+    max-height: 250px;
+    border-radius: 5px;
+}
+.img-group-cnt{
+    display: none;
+}
+.info-cnt{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info-link{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.title{
+    margin: 0px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.description{
+    margin: 1px;
+    font-size: 1rem;
+    padding: 2px;
+}
+.price{
+    margin: 1px;
+    font-style: italic;
+}
+.info-cnt button{
+    width: 180px;
+}
+.btn-cnt{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.btn-cnt button {
+    max-width: 100px;
+    padding: 5px;
+}
+.ordered {
+    margin: 0;
+    color: rgb(238, 58, 58);
+    font-size: 1.1rem;
+}
+.order-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3px;
+}
+.order-details p {
+    margin: 0;
+    color: rgb(238, 58, 58);
+    font-size: 1.1rem;
+}

@@ -1,0 +1,11 @@
+.add-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.plus-icon{
+    font-size: 1.5rem;
+}
+

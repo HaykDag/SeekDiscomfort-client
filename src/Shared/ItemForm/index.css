@@ -1,0 +1,80 @@
+.details-cnt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    
+  }
+  .orderDetails{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 350px;
+    gap: 15px;
+  }
+  .orderDetails div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .orderDetails  p {
+    margin:0;
+    font-size: 1.2rem;
+    border: 1px solid #333;
+    padding: 5px;
+    border-radius: 15px;
+  }
+  .form{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    user-select: none;
+  }
+  .form div{
+    margin: 1px;
+  }
+  .upload-cnt{
+    display: flex;
+    flex-direction: column;
+    border: 1px dotted #333;
+    border-radius: 5px;
+    padding: 14px;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-cnt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+  }
+  .img-btn-cnt{
+    position: relative;
+  }
+  .pic{
+    min-height: 100px;
+    background-color: gray;
+    border: 1px dashed #333;
+    padding: 2px;
+    border-radius: 5px;
+  }
+.delete-btn{
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: rgb(199, 161, 161);
+  cursor: pointer;
+}
+.delete-btn:hover{
+  background-color: red;
+}
