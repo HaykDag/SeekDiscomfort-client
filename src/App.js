@@ -1,10 +1,10 @@
 import { RouterProvider } from 'react-router-dom'
 import MyRouter from "./hooks/useRouter";
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { fetchItems} from './features/items/itemsSlice'
 import { fetchCategories } from './features/Categories/CategorySlice';
 import { useEffect } from 'react';
-
+import { pageSize } from './components/AppData';
 function App() {
 
   const myRouter = MyRouter()
@@ -13,7 +13,7 @@ function App() {
 
   //fetching items as soon as app loads
   useEffect(()=>{
-    dispatch(fetchItems())
+    dispatch(fetchItems({ value:"", page:1, pageSize, searchTag:"" }))
     dispatch(fetchCategories());
   },[dispatch])
  
