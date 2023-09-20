@@ -1,7 +1,6 @@
 import { createSlice, createAsyncThunk, current } from "@reduxjs/toolkit";
 import axios from "axios";
-
-const ITEMS_URL = "http://localhost:4000/items";
+import { AppUrl } from "../../components/AppData";
 
 const initialState = {
     items: [],
@@ -14,7 +13,7 @@ export const fetchItems = createAsyncThunk(
     async ({ value, page, pageSize, searchTag }) => {
         try {
             const response = await axios.get(
-                `${ITEMS_URL}?value=${value}&pageSize=${pageSize}&page=${page}&searchTag=${searchTag}`
+                `${AppUrl.Items}?value=${value}&pageSize=${pageSize}&page=${page}&searchTag=${searchTag}`
             );
             return response.data;
         } catch (err) {
