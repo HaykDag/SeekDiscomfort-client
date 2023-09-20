@@ -13,7 +13,7 @@ function App() {
 
   //fetching items as soon as app loads
   useEffect(()=>{
-    dispatch(fetchItems({ value:"", page:1, pageSize, searchTag:"" }))
+    dispatch(fetchItems())
     dispatch(fetchCategories());
   },[dispatch])
  
