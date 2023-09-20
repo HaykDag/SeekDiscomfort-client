@@ -1,5 +1,5 @@
 
-const BASE_URL = "seek-discomfort-rfy3jgcs5-haykdag.vercel.app/"
+const BASE_URL = "seek-discomfort-api.vercel.app/"
 export const AppUrl = {
     Categories: BASE_URL + "categories/",
     Items: BASE_URL + "items/",
