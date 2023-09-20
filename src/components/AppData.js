@@ -1,4 +1,4 @@
-const BASE_URL="https://seek-discomfort-rfy3jgcs5-haykdag.vercel.app/"
+const BASE_URL="https://seek-discomfort-cxla0nkie-haykdag.vercel.app/"
 //const BASE_URL = "http://localhost:4000/"
 export const AppUrl = {
     Categories: BASE_URL + "categories/",
