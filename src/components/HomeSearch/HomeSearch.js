@@ -37,7 +37,7 @@ const HomeSearch = ({
                     onChange={(value) => setSearchTag(value)}
                     value={searchTag === "" ? "filter..." : searchTag}
                 >
-                    {tagOptions.map((tag) => {
+                    {tagOptions?.map((tag) => {
                         return (
                             <Select.Option key={tag.id} value={tag.title}>
                                 {tag.title}
