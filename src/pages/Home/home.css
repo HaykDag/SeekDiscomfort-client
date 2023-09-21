@@ -6,4 +6,26 @@
     overflow-x: hidden;
     position: relative;
 }
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 25px;
+}
+@media screen and (max-width:1200px){
+    .main{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width:900px){
+    .main{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:550px){
+    .main{
+        grid-template-columns: 1fr;
+    }
+}
+
 

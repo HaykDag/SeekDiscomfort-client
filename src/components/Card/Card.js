@@ -96,7 +96,7 @@ const Card = ({ id }) => {
             <div className="info-cnt">
                 <Link
                     className="info-link"
-                    to={`http://localhost:3000/items/${id}`}
+                    to={AppUrl.Items + item.id}
                 >
                     <h3 className="title">{item?.title}</h3>
                     <p className="description">{item?.description}</p>
