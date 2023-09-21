@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { AppUrl } from "../../components/AppData";
-
+axios.defaults.withCredentials = true;
 const initialState = {
     allUsers: [],
     totalUsers: 0,

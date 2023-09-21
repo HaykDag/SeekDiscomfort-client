@@ -1,6 +1,8 @@
 
-const BASE_URL = "seek-discomfort-api.vercel.app/"
+const BASE_URL="https://seekdiscomfort-api-com.onrender.com/"
+
 export const AppUrl = {
+    Base:BASE_URL,
     Categories: BASE_URL + "categories/",
     Items: BASE_URL + "items/",
     Images: BASE_URL + "images/",

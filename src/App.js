@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux'
 import { fetchItems} from './features/items/itemsSlice'
 import { fetchCategories } from './features/Categories/CategorySlice';
 import { useEffect } from 'react';
-
+import { pageSize } from './components/AppData';
 function App() {
 
   const myRouter = MyRouter()
