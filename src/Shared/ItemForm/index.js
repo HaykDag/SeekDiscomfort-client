@@ -57,7 +57,7 @@ const ItemForm = ({ data = {}, daddy }) => {
                 );
 
                 imgId = response.data.public_id;
-                imgUrl = response.data.url;
+                imgUrl = response.data.secure_url;
             } catch (err) {
                 console.log(err);
             }
