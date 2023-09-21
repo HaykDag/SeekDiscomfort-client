@@ -1,19 +1,20 @@
-// import styles from "@chatscope/chat-ui-kit-styles/dist/default/styles.min.css";
-// import {
-//     MainContainer,
-//     ChatContainer,
-//     MessageList,
-//     Message,
-//     MessageInput,
-//     ConversationHeader,
-// } from "@chatscope/chat-ui-kit-react";
-// import "./chat.css";
-// import { useEffect, useState } from "react";
-// import io from "socket.io-client";
-// import { useSelector } from "react-redux";
-// import { selectUser } from "../../features/users/usersSlice";
+import styles from "@chatscope/chat-ui-kit-styles/dist/default/styles.min.css";
+import {
+    MainContainer,
+    ChatContainer,
+    MessageList,
+    Message,
+    MessageInput,
+    ConversationHeader,
+} from "@chatscope/chat-ui-kit-react";
+import "./chat.css";
+import { useEffect, useState } from "react";
+import io from "socket.io-client";
+import { useSelector } from "react-redux";
+import { selectUser } from "../../features/users/usersSlice";
+import { AppUrl } from "../AppData";
 
-//const socket = io.connect("http://localhost:4000");
+const socket = io.connect(AppUrl.Base);
 
 const Chat = () => {
     // const [isChatOpen, setIsChatOpen] = useState(false);
@@ -102,4 +103,3 @@ const Chat = () => {
 };
 
 export default Chat;
-
