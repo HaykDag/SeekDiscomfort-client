@@ -96,7 +96,7 @@ const Card = ({ id }) => {
             <div className="info-cnt">
                 <Link
                     className="info-link"
-                    to={AppUrl.Items + item.id}
+                    to={"./items/"+ item.id}
                 >
                     <h3 className="title">{item?.title}</h3>
                     <p className="description">{item?.description}</p>
