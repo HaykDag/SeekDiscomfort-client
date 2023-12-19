@@ -21,13 +21,17 @@ const SingleItem = () => {
     const dispatch = useDispatch();
 
     const [data, setData] = useState({});
+    const [loading,setLoading] = useState(false);
 
     const getItem = async () => {
+        setLoading(true);
         try {
             const res = await axios(`${AppUrl.Items}/${id}`);
             setData(res.data);
         } catch (err) {
             setData(err.response.data.error);
+        }finally{
+            setLoading(false);
         }
     };
 
@@ -76,6 +80,10 @@ const SingleItem = () => {
         };
         dispatch(addItemIntoBasket(basketItem));
     };
+
+    if(loading){
+        return <div>Loading...</div>
+    }
 
     return data.title ? (
         <div className="item-info-cnt">
