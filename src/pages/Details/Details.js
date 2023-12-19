@@ -8,14 +8,18 @@ import { AppUrl } from "../../components/AppData";
 
 const Details = () => {
     const [data, setData] = useState();
+    const [loading,setLoading] = useState(false);
     const { id } = useParams();
 
     const getItem = async () => {
+        setLoading(true);
         try {
             const res = await axios(`${AppUrl.Items}/${id}`);
             setData(res.data);
         } catch (err) {
             setData(err.response.data.error);
+        }finally{
+            setLoading(false);
         }
     };
 
@@ -23,6 +27,9 @@ const Details = () => {
         getItem();
     }, [id]);
 
+    if(loading){
+        return <div>Loading...</div>
+    }
     return (
         <>{!data ? <NotFound /> : <ItemForm daddy="Details" data={data} />}</>
     );
