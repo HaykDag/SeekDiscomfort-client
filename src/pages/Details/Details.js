@@ -27,11 +27,9 @@ const Details = () => {
         getItem();
     }, [id]);
 
-    if(loading){
-        return <div>Loading...</div>
-    }
+    
     return (
-        <>{!data ? <NotFound /> : <ItemForm daddy="Details" data={data} />}</>
+        <>{loading? <div>Loading...</div> : !data ? <NotFound /> : <ItemForm daddy="Details" data={data} />}</>
     );
 };
 

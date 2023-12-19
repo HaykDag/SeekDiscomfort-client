@@ -64,10 +64,9 @@ const SingleItem = () => {
     };
     const handleRemove = async () => {
         const res = await axios.delete(`${AppUrl.Basket + id}`);
-        console.log(res.data);
         dispatch(removeItemFromBasket(id));
     };
-    console.log(user);
+
     const handleAddItem = async () => {
         await axios.post(`${AppUrl.Basket}`, { id });
         const basketItem = {
